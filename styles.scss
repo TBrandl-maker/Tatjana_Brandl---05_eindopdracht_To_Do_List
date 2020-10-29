@@ -1,0 +1,39 @@
+.container {
+    width: 70vw;
+    margin: auto;
+
+    .tasks {
+        list-style: none;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        padding: 10px;
+        border: 1px solid black;
+    
+        .task {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &:nth-child(odd) {
+                background-color: lightblue;
+            }
+
+            .description {
+                width: 100%;
+                padding-left: 5px;
+                
+                &.removing {
+                    text-decoration: line-through;
+                }
+            }
+            
+            .delete {
+                background: none;
+                border: none;
+                color: red;
+            }
+        }
+    }
+}

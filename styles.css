@@ -1,0 +1,45 @@
+.container {
+  width: 70vw;
+  margin: auto;
+}
+.container .tasks {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  border: 1px solid black;
+}
+.container .tasks .task {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container .tasks .task:nth-child(odd) {
+  background-color: lightblue;
+}
+.container .tasks .task .description {
+  width: 100%;
+  padding-left: 5px;
+}
+.container .tasks .task .description.removing {
+  text-decoration: line-through;
+}
+.container .tasks .task .delete {
+  background: none;
+  border: none;
+  color: red;
+}
+/*# sourceMappingURL=styles.css.map */
